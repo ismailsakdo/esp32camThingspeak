@@ -1,7 +1,7 @@
 // LINK: https://teachablemachine.withgoogle.com/models/4bkZfd42s/
 //Link 2: https://teachablemachine.withgoogle.com/models/H1IJmNq9A/
-const char* ssid     = "iot_kdo@unifi";   //your network SSID
-const char* password = "ismailsa2022";   //your network password
+const char* ssid     = "XXXXX";   //your network SSID
+const char* password = "XXXXX";   //your network password
 
 //輸入AP端連線帳號密碼
 const char* apssid = "ESP32-CAM";
