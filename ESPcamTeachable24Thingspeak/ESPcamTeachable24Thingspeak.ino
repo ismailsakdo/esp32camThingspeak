@@ -1,15 +1,15 @@
 // LINK: https://teachablemachine.withgoogle.com/models/4bkZfd42s/
 //Link 2: https://teachablemachine.withgoogle.com/models/H1IJmNq9A/
-const char* ssid     = "iot_kdo@unifi";   //your network SSID
-const char* password = "ismailsa2022";   //your network password
+const char* ssid     = "XXXXXX";   //your network SSID
+const char* password = "XXXXXXX";   //your network password
 
 //輸入AP端連線帳號密碼
 const char* apssid = "ESP32-CAM";
 const char* appassword = "12345678";         //AP密碼至少要8個字元以上
 
 #include <HTTPClient.h>
-const char* apiKey = "MC47Z2OX80PJVCPQ";
-const int channelId = 2383501; // Channel ID
+const char* apiKey = "XXXXXX";
+const int channelId = XXXXXX; // Channel ID
 const char* server = "api.thingspeak.com";
 
 #include <WiFi.h>
@@ -844,20 +844,20 @@ static esp_err_t index_handler(httpd_req_t *req){
     return httpd_resp_send(req, (const char *)INDEX_HTML, strlen(INDEX_HTML));
 }
 
-//=== CHANGE NAME as CLASS
+//=== CHANGE NAME as CLASS (A-F) TeachableMachine
 
 int convertStringToNumeric(String identifier) {
-  if (identifier == "tembikai") {
+  if (identifier == "A") {
     return 1;
-  } else if (identifier == "lada") {
+  } else if (identifier == "B") {
     return 2;
-  } else if (identifier == "ayah") {
+  } else if (identifier == "C") {
     return 3;
-  } else if (identifier == "sumayyah") {
+  } else if (identifier == "D") {
     return 4;
-  } else if (identifier == "syafie") {
+  } else if (identifier == "E") {
     return 5;
-  } else if (identifier == "imran") {
+  } else if (identifier == "F") {
     return 6;
   } else {
     // Default case if identifier is not recognized
