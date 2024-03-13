@@ -875,7 +875,7 @@ void loop() {
   int numericP2 = convertStringToNumeric(P2);
 
   // Construct the URL with the API key and data
-  String url = "/update?api_key=" + String(apiKey) + "&field1=" + String(numericP1) + "&field2=" + String(numericP2);
+  String url = "/update?api_key=" + String(apiKey) + "&field1=" + String(numericP1) + "&field2=" + String(numericP2); //change set2
 
   // Initialize the HTTP client
   HTTPClient http;
